@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+    <audio></audio>
+    <div id="bg"></div>
+    <main>
+        <header>知道不知道</header>
+        <div id="box">
+            <div id="boxA">
+                <h2>刘若英</h2>
+                <div id="cover">
+                    <section></section>
+                </div>
+                <div id="lrc">&#x3000;</div>
+            </div>
+            <div id="boxB"></div>
+        </div>
+        <div id="time">
+            <span>00:00</span>
+            <input type="range">
+            <span>00:00</span>
+        </div>
+        <div id="buttons">
+            <img onclick="prev()" src="images/prev.png">
+            <img onclick="play()" src="images/play.png">
+            <img onclick="next()" src="images/next.png">
+        </div>
+        <div id="volume">
+            <i class="icon-volume-down"></i>
+            <input type="range" value="100" max="100">
+            <i class="icon-volume-up"></i>
+        </div>
+    </main>
+    <aside>
+        <header>
+            播放列表
+        </header>
+        <ul></ul>
+        <footer onclick="closeList()">关闭</footer>
+    </aside>
+    <script src="list.js"></script>
+    <script src="lrcs/传奇.js"></script>
+    <script src="lrcs/知道不知道.js"></script>
+    <script src="player.js"></script>
+</body>
+
+</html>
