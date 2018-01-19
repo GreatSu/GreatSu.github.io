@@ -247,6 +247,9 @@ cover.onclick = function () {
 
 function closeList() {
     aside.style.animation = 'slideDown 0.5s forwards'
+    setTimeout(function() {
+        aside.style.display = 'none'
+    }, 500);
 }
 
 function renderList() {
